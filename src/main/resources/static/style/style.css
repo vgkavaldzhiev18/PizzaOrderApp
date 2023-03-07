@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.backgroundImage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    animation: backgroundAnimation 0.8s forwards;
+    transform: scale(1.7);
+    filter:blur(5px);
+}
+
+
+@keyframes backgroundAnimation {
+    from{
+
+        transform: scale(1.7);
+        filter:blur(5px);
+    }
+
+    to{
+
+        transform: scale(1.03);
+        filter:blur(12px);
+    }
+}
+
+
+
+.login{
+    position:absolute;
+    left:50%;
+    top:25%;
+    transform: translate(-50%, -50%);
+    opacity:0.8;
+}
+
+.login h1{
+    position: relative;
+    border:3px solid white;
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    font-size:35px;
+    border-radius:50px;
+}
+
+.login h3{
+    position: relative;
+    color:white;
+    text-align:center;
+    font-size:20px;
+}
+.icon{
+
+}
+.img{
+    position:absolute;
+    height:50px;
+    width:50px;
+    margin-top:10px;
+}
+
